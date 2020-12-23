@@ -1,0 +1,41 @@
+.user-details {
+    position: absolute;
+    top: 60px;
+    height: calc(100% - 60px);
+    overflow: scroll;
+    width: 100%;
+    background: #2979FF;
+    z-index: 1;
+    transition: ease-in-out 1s;
+    transition-delay: 0.2s;
+}
+.user-details.show{
+    display: block;
+    transform: translateX(0);
+}
+
+.user-details.hide{
+    display: none;
+    transform: translateX(-100%);
+}
+
+.users-container h2, .users-container h3 {
+    margin: 0;
+    border-bottom: 1px solid #ececec;
+    width: 100%;
+}
+
+.users-container h2 {
+    padding: 2rem 1rem;
+    border-top: 1px solid #ececec;
+    color: #ffffff;
+}
+
+.users-container h3 {
+    padding: 1rem 2rem;
+    color: #ececec;
+}
+
+.activeContainer {
+    display: block;
+}
