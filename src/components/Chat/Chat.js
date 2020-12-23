@@ -9,7 +9,8 @@ import Input from '../Input/Input';
 
 import './Chat.css';
 
-const ENDPOINT = 'https://c-o-s.herokuapp.com';
+// const ENDPOINT = 'https://c-o-s.herokuapp.com';
+const ENDPOINT = 'localhost:5000';
 
 let socket;
 
@@ -57,7 +58,7 @@ const Chat = ({ location }) => {
   return (
     <div className="outerContainer">
       <div className="container">
-          <InfoBar room={room} />
+          <InfoBar room={room} users={users} />
           <Messages messages={messages} name={name} />
           <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
       </div>
